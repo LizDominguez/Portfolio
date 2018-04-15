@@ -6,7 +6,7 @@ var renderer = new THREE.WebGLRenderer({canvas: canvas, alpha: true});
 renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
 scene.fog = new THREE.Fog( 0xffffff, 1, 10000 );
-var geometry = new THREE.BoxGeometry(20, 20, 20);
+var geometry = new THREE.IcosahedronGeometry(20);
 var material = new THREE.MeshNormalMaterial();
 group = new THREE.Group();
 
@@ -19,11 +19,11 @@ for ( var i = 0; i < 1000; i ++ ) {
   mesh.rotation.y = Math.random() * 2 * Math.PI;
   mesh.matrixAutoUpdate = false;
   mesh.updateMatrix();
-  group.add( mesh );
+  group.add(mesh);
 }
 
 scene.add(group);
-window.addEventListener( 'resize', onWindowResize, false );
+window.addEventListener('resize', onWindowResize, false);
 
 function onWindowResize() {
 	camera.aspect = canvas.clientWidth / canvas.clientHeight;
