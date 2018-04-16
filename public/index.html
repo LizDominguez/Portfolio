@@ -42,34 +42,66 @@
       <div class="top-bar">
         <h1>My Projects</h1>
         <div class="filters">
+          <button autofocus>All</button>
           <button>Web Development</button>
           <button>Games</button>
-          <button>Other</button>
         </div>
       </div>
+
       <div class="projects">
         <div class="project">
-          <img src="https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450">
-          <h2>Project Title</h2>
+
+          <!-- Image and buttons -->
+          <div class="project-image-container" style="background-image: url('https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450');">
+            <div class="project-buttons">
+              <a href=""><img src="/src/play.svg"></a>
+              <span>|</span>
+              <a href=""><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <!-- Description -->
           <p>
-            Description
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           </p>
+
+          <!-- Title -->
+            <h2>Project Title</h2>
+
         </div>
       </div>
+
       <button class="read-more">View all projects</button>
     </div>
 
     <div class="container">
-      <div class="top-bar">
-        <h1>About</h1>
-        <div class="filters">
-          <button>Technology</button>
-          <button>Education</button>
-          <button>Hobbies</button>
+      <div class="about">
+        <div class="about-image" style="background-image: url('/src/lakeunion.jpg');"></div>
+        <div class="about-text">
+          <h1>About</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
         </div>
+      </div>
+      <div class="about-next-button">
+        <img src="/src/arrow.svg">
       </div>
     </div>
 
+    <script src="/js/main.js"></script>
     <script src="http://threejs.org/build/three.min.js"></script>
     <script type="application/javascript" src="/js/canvas.js"></script>
 

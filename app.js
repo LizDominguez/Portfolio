@@ -10,7 +10,8 @@ app.get('/', function(req, res) {
       title: "Porject 1",
       description: "something something",
       url: 'http://',
-      link: "www.sdfsf.com"
+      link: "www.sdfsf.com",
+      category: "web development"
     }
   ];
 
